@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servlet 복습 프로젝트</title>
+</head>
+<body>
+    <h1>
+        노명진의 Servlet 복습 프로젝트
+    </h1>
+
+    <!-- 피자 주문 요청 -> 영수증 응답 -->
+    <form action="/ex3" method="get">
+    <h3>피자 주문하기</h3>
+        피자 선택 : 
+        <select name="pizza">
+            <option value="콤비네이션">콤비네이션 (+15,000)</option>
+            <option value="치즈">치즈 (+10,000)</option>
+            <option value="하와이안">하와이안 (+13,000)</option>
+            <option value="포테이토">포테이토 (+15,000)</option>
+        </select>
+        <br>
+        사이즈 선택 : 
+        M <input type="radio" name="size" value="medium">
+        /
+        L <input type="radio" name="size" value="large">
+
+        <br>
+        도우 선택 :
+        기본 <input type="radio" name="dou" value="orignal"> 
+        / 
+        씬 <input type="radio" name="dou" value="thin">
+        /
+        기본 <input type="radio" name="dou">
+
+
+    </form>
+
+
+</body>
+</html>
