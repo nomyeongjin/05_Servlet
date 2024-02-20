@@ -20,20 +20,32 @@
             <option value="하와이안">하와이안 (+13,000)</option>
             <option value="포테이토">포테이토 (+15,000)</option>
         </select>
+        <hr>
+        사이즈 선택 : <br>
+        <input type="radio" name="size" value="medium"> M 
         <br>
-        사이즈 선택 : 
-        M <input type="radio" name="size" value="medium">
-        /
-        L <input type="radio" name="size" value="large">
+        <input type="radio" name="size" value="large"> L (+3,000)
 
+        <hr>
+        도우 선택 : <br>
+        <input type="radio" name="dou" value="orignal"> 기본
         <br>
-        도우 선택 :
-        기본 <input type="radio" name="dou" value="orignal"> 
-        / 
-        씬 <input type="radio" name="dou" value="thin">
-        /
-        기본 <input type="radio" name="dou">
+        <input type="radio" name="dou" value="thin"> 씬 (+2,000)
+        <br>
+        <input type="radio" name="dou" value="crust"> 치즈크러스트 (+3,000)
 
+        <hr>
+
+        토핑 추가 : <br>
+        <input type="checkbox" name="topping" value="치즈"> 치즈 (+3,000)<br>
+        <input type="checkbox" name="topping" value="옥수수"> 옥수수 (+1,000)<br>
+        <input type="checkbox" name="topping" value="소스"> 소스 (+500)<br>
+
+        <hr><hr><hr>
+        주문자명 : <input type="text" name="inputName"><br>
+        주소 : <input type="text" name="inputAddress" size="50">
+
+        <button>주문하기</button>
 
     </form>
 

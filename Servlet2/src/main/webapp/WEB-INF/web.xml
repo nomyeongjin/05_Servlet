@@ -9,4 +9,15 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+	<servlet-name>pizza</servlet-name>
+	<servlet-class>edu.kh.servlet.controller.PizzaSurvlet</servlet-class>
+</servlet>  
+
+<!-- 등록된 servlet과 요청 주소 매핑하기 -->
+<servlet-mapping>
+	<servlet-name>pizza</servlet-name>
+	<url-pattern>/ex3</url-pattern>
+</servlet-mapping>
 </web-app>

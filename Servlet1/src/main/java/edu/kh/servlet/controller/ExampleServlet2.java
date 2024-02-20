@@ -80,7 +80,7 @@ public class ExampleServlet2 extends HttpServlet {
 		// --------------------------------------------------------------------
 		
 		// 응답 형태 지정
-		resp.setContentType("text/html; cherset=utf-8");
+		resp.setContentType("text/html; charset=utf-8");
 		
 		// 응답 스트림 얻어오기
 		PrintWriter out = resp.getWriter();
