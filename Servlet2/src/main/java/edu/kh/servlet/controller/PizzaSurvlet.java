@@ -73,6 +73,9 @@ public class PizzaSurvlet extends HttpServlet {
 		sb.append("<ul>");
 		sb.append(String.format("<h4>주문하신 피자 : %s</h4>", pizza));
 		
+		String temp2 = dou.equals("medium")?"M":"L";
+		sb.append(String.format("<li>사이즈 : %s</li>", temp2));
+		
 		String temp = dou.equals("original")?dou.equals("thin")?"기본":"씬":"치즈크러스트";
 		sb.append(String.format("<li>도우 : %s</li>", temp));
 		
