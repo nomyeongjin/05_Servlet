@@ -43,11 +43,12 @@ public class SearchServlet extends HttpServlet{
 			String path = "/WEB-INF/views/practice/search_result.jsp";
 			req.getRequestDispatcher(path).forward(req, resp);
 			
+			
+			
 		}else { // 존재하지 않는 경우
 			String searchMessage = inputName + "는 존재하지 않습니다.";
 			
 			HttpSession session = req.getSession(); // session 객체 얻어오기
-			
 			session.setAttribute("searchMessage", searchMessage);
 			
 			// /error redirect

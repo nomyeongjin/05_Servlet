@@ -1,0 +1,30 @@
+문제점
+
+[JoinServlet.java]
+
+1) form 태그의 action 타입과 @WebServlet에서 연결되는 링크가 동일하지 않음
+
+2) 파라미터를 얻어올 때 잘못된 name값을 작성함
+
+3) 결과화면을 담고있는 success.jsp의 경로가 정확하지 않음
+
+[sucess.jsp]
+
+4) ${result}라는 key값을 가진 el이 존재하지 않음
+
+
+조치 사항
+[JoinServlet.java]
+
+1)@WebServlet("/join") 로 고쳐 form태그의 action타입과 동일하게 수정
+
+2) String memberId = req.getParameter("memberId"); 
+    String memberPw = req.getParameter("memberPw");
+     String memberName = req.getParameter("memberName");
+으로 고쳐 정확한 name값을 작성해야함
+
+3) String path = "/WEB-INF/views/success.jsp"; 로 고쳐 정확한 결과 페이지가 담긴jsp 경로 설정
+
+[sucess.jsp]
+
+4) ${message}로 수정하여 올바른 key값으로 페이지에 위임받아옴
